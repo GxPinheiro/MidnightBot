@@ -62,4 +62,4 @@ async def _bot():
     """Is the bot cool?"""
     await bot.say('Yes, the bot is cool.')
 
-bot.run('token')
+bot.run('NDQ4NjMzMjQxMzk0NzQxMjQ4.DeY_ow.SktFlzgpKzyMXTo4a0l5XfAa6QA')
