@@ -1,12 +1,13 @@
 import discord
 from discord.ext import commands
 import random
+import plugins
 
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
 
 There are a number of utility commands being showcased here.'''
-bot = commands.Bot(command_prefix='?', description=description)
+bot = commands.Bot(command_prefix='!!', description=description)
 
 @bot.event
 async def on_ready():
@@ -45,7 +46,7 @@ async def repeat(times : int, content='repeating...'):
 
 @bot.command()
 async def joined(member : discord.Member):
-    """Says when a member joined."""
+    """Alerts when a member enter the server"""
     await bot.say('{0.name} joined in {0.joined_at}'.format(member))
 
 @bot.group(pass_context=True)
